@@ -1,0 +1,15 @@
+Flask
+Flask-RESTful
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-JWT-Extended
+Flask-Mail
+Flask-CORS
+PyMySQL
+requests
+celery
+pillow
+python-dotenv
+pyotp
+qrcode[pil]
+flask-restx 
