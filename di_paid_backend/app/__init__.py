@@ -32,15 +32,18 @@ def create_app():
     babel.timezone_selector_func = get_timezone
     
     CORS(
-        app,
-        supports_credentials=True,
-        resources={
-            r"/api/*": {
-                "origins": ["http://localhost:5173", "http://127.0.0.1:5173"],
-                "allow_headers": ["Authorization", "Content-Type"],
-                "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-            }
-        },
+     app,
+     supports_credentials=True,
+     resources={
+         r"/api/*": {
+             "origins": [
+                 "http://localhost:5173",
+                 "http://127.0.0.1:5173",
+                 "https://di-paid.vercel.app",
+                 "https://di-paid-ki8yglz3l-muhammad-habibs-projects-c5f7b7a0.vercel.app"
+             ],
+         }
+     },
     )
 
     # Register blueprints here (e.g., from .routes import user_bp; app.register_blueprint(user_bp))
