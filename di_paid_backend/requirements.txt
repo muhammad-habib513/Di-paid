@@ -1,4 +1,4 @@
-gunicorn
+gunicorn==21.2.0
 Flask
 Flask-RESTful
 Flask-SQLAlchemy
